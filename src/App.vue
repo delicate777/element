@@ -1,9 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view></router-view>
+    <router-link to="/home">
+      <el-button type="primary">Home</el-button>
+    </router-link> |
+    <router-link to="/about">
+      <el-button type="primary">About</el-button>
+    </router-link> |
+    <router-link to="/form">
+      <el-button type="primary">Form</el-button>
+    </router-link> |
+    <router-link to="table">
+      <el-button type="primary">Table</el-button>
+    </router-link>
 </template>
 
 <style>
